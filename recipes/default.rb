@@ -31,6 +31,12 @@ if platform?("ubuntu", "debian")
     command command_string
   end
 
+  bash "Source the updated file" do
+    code "source /etc/default/locale"
+  end
+
+end
+
 end
 
 if platform?("redhat", "centos", "fedora")
