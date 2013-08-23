@@ -37,8 +37,6 @@ if platform?("ubuntu", "debian")
 
 end
 
-end
-
 if platform?("redhat", "centos", "fedora")
 
   execute "Update locale" do
